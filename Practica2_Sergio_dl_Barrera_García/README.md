@@ -24,13 +24,13 @@ Una vez añadidas las físicas, podemos ver en el panel derecho como nos ha  añ
 
 Y una vez le damos a jugar, veremos como la esfera tiene movimiento y el cubo se queda estático
 
-![imagen](./img/Captura2.2.gif)
+![imagen](./img/captura2.2.gif)
 
 ### c) La esfera y el cubo tienen físicas
 
 Hacemos lo mismo que anteriormente pero esta vez con el cubo y este es el resultado
 
-![imagen](./img/Captura3.gif)
+![imagen](./img/captura3.gif)
 
 ### d) La esfera y el cubo son físicos y la esfera tiene 10 veces la masa del cubo
 
@@ -95,3 +95,58 @@ Para acceder al atributo *speed* hay que añadirlo como un atributo público de 
 
 ![imagen](./img/Captura8.PNG)
 
+Ahora podemos ver como nos aparece en el panel derecho para modificarlo (acabó siendo modificada a 1)
+
+![imagen](./img/Captura9.PNG)
+
+### c) Estar a la escucha de si el usuario ha utilizado los ejes virtuales. Elegir cuáles se va a permitir utilizar: flechas, awsd.
+
+Realizado con los pasos anteriores
+
+### Comprobamos su funcionamiento
+
+Observamos que funciona perfectamente usando tanto las flechas como las teclas aswd para desplazarnos
+
+![imagen](./img/captura10.gif)
+
+### d) Elegir otros ejes virtuales para el giro y girar al jugador sobre el eje OY (up)
+
+En este caso añadiremos dos teclas para poder rotar el objeto que serán la E y la Q, a su vez le hemos añadido el atributo speedRotation para modificar la velocidad en Unity
+
+![imagen](./img/Captura11.PNG)
+
+Así es el resultado final
+
+![imagen](./img/captura12.gif)
+
+## 3. Sobre la escena que has trabajado programa los scripts necesarios para las siguientes acciones:
+
+### * Se deben incluir varios cilindros sobre la escena. Cada vez que el objeto jugador colisione con alguno de ellos, deben aumentar su tamaño y el jugador aumentar puntuación
+
+Para este apartado usaremos el método *OnCollisionEnter* en el que detectaremos el objeto con el que colisionan los cilindros que en este caso será el cubo. Una vez sepamos que colisiona aumentaremos su tamaño. Para ello también usaremos *transform.localScale()*
+
+
+### * Se deben incluir cilindros que se alejen del jugador cuando esté próximo
+
+Usaremos un método de Vector3 que se llama *Distance* para saber la diferencia de distancia que hay entre un objeto y otro.
+
+Una vez sabemos esta diferencia de distancia calculamos la dirección y luego le indicamos con el *Translate* su movimiento.
+
+![imagen](./img/Captura14.PNG)
+
+Como vemos no llega a tocar nunca el cilindro
+
+![imagen](./img/captura14.gif)
+
+
+### * Ubicar un tercer objeto que sea capaz de detectar colisiones y que se mueva con las teclas: I, L, J, M
+
+Para este apartado haremos un script indicándole las teclas que queremos que pulse el usuario para poder manejarlo con el método `Input.GetKey(KeyCode.I)` como vemos a continuación
+
+![imagen](./img/Captura13.PNG)
+
+Vemos en el gif cómo funciona
+
+![imagen](./img/captura13.gif)
+
+/*faltan apartados*/
