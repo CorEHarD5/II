@@ -1,5 +1,3 @@
-Cuestionario #04: Lenguajes regulares y autómatas finitos (Tema 2)# Práctica 2
-
 ## Introducción a los scripts en Unity
 
 * Autor: Sergio de la Barrera García
