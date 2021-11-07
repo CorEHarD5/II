@@ -10,21 +10,27 @@ public class Movement : MonoBehaviour {
 
 
   void Start() {
-    transformObject = GetComponent<Transform>();      
+    transformObject = GetComponent<Transform>();
+    SceneController.eventMooveW += getMooveToW;
+    SceneController.eventMooveA += getMooveToA;
+    SceneController.eventMooveS += getMooveToS;
+    SceneController.eventMooveD += getMooveToD;
   }
 
-  void Update() {
-
-    if (Input.GetKey(KeyCode.W))
-      transformObject.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
-    
-    if (Input.GetKey(KeyCode.S))
-      transformObject.position += new Vector3(0, 0, -1) * speed * Time.deltaTime;
-
-    if (Input.GetKey(KeyCode.A))
-      transformObject.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
-
-    if (Input.GetKey(KeyCode.D))
-      transformObject.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;      
+  void getMooveToW() {
+    transformObject.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
   }
+
+  void getMooveToA() {
+    transformObject.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
+  } 
+
+  void getMooveToS() {
+    transformObject.position += new Vector3(0, 0, -1) * speed * Time.deltaTime;
+  }
+  
+  void getMooveToD() {
+    transformObject.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;  
+  }
+          
 }
