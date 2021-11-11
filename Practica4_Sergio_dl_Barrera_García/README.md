@@ -113,4 +113,4 @@ El uso de la cámara lo mostramos en el siguiente gif:
 
 ![imagen](./img/Captura9.gif)
 
-/*Nótese que no se puede mostar el funcionamiento del micrófono pero ha funcionado correctamente y que al parar la cámara sigue manteniendo la imagen, pero la webcam deja de estar en uso*/
+*Nótese que no se puede mostar el funcionamiento del micrófono pero ha funcionado correctamente y que al parar la cámara sigue manteniendo la imagen, pero la webcam deja de estar en uso*
