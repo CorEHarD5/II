@@ -6,7 +6,7 @@
 
 ## Objetivo de la práctica
 
-El objetivo de esta práctica es practicar el uso de componentes con *Unity3D. Los componentes que se van a ver en esta práctica son la cámara y el micrófono del ordenador o el teléfono móvil
+El objetivo de esta práctica es practicar el uso de componentes con *Unity3D*. Los componentes que se van a ver en esta práctica son la cámara y el micrófono del ordenador o el teléfono móvil
 
 Como norma general, para la utilización de estos componentes se debe importar el paquete UnityEngine. Hay que tener en cuenta que al probarse en el ordenador, muchos de los componentes pueden devolver datos no realistas o directamente no funcionar
 
