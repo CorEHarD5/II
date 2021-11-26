@@ -78,7 +78,7 @@ Se han creado 3 botones para cada una de las funciones de este componente. Luego
 Tenemos la siguiente estructura de ficheros:
 
 
-- DictationRecognizer
+- KeywordRecognizer
   - Buttons
     - StartKeyword: Script para empezar el reconocimiento
     - StopKeyword: Script para pausar el reconocimiento
